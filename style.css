@@ -256,7 +256,7 @@ left: 0;
     font-size: 30px;
     margin: 15px 0;
 }
-.typing{
+.auto-input{
     color: var(--skin-color);
 }
 .home-info p{
@@ -594,4 +594,52 @@ max-width: 50%;
     .contact .contact-form .form-item textarea.form-control{
         height: 140px;
     }
-   
+   @media (max-width:1199px){
+       .aside{
+           left: -270px;
+           /* background-color: red; */
+       }
+       .main-container{
+           padding-left: 0;
+
+       }
+       .about .about-container .personal-info .info-item p span{
+           display: block;
+           margin-left: 0;
+
+       }
+
+   }
+   @media (max-width:991px){
+        .contact-info-item{
+        flex:  0 0 50%;
+        max-width: 50%;
+        /* margin-top: 10rem;  */
+       }
+       .service-item{
+        flex:  0 0 50%;
+        max-width: 50%;
+       }
+       
+       .home-info{
+           flex:  0 0 100%;
+           max-width: 100%;
+       }
+       .home-img{
+           display: none;
+       }
+   }
+   @media (max-width:767px){
+       .contact .contact-form .col-6,
+       .contact .contact-info-item,
+       .service-item,
+    .about .about-container .experience,
+    .about .about-container .education,
+       .about .about-container  .skills,
+       .about .about-container .personal-info{
+           flex: 0 0 100%;
+           max-width: 100%;
+           margin-top: 7rem;
+       }
+
+   }
