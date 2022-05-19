@@ -6,6 +6,13 @@
     --bg-black-900:#302e4d;
     --bg-black-700:#504e70;
 }
+body.dark{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --bg-black-900:#ffffff;
+    --bg-black-700:#e9e9e9;
+}
 body{
   
     line-height: 1.5;
@@ -256,7 +263,7 @@ left: 0;
     font-size: 30px;
     margin: 15px 0;
 }
-.auto-input{
+.typing{
     color: var(--skin-color);
 }
 .home-info p{
