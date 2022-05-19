@@ -114,6 +114,9 @@ left: 0;
 .btn:hover{
     transform: scale(1.05);
 }
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
 .aside{
     width: 270px;
     background: var(--bg-black-100);
@@ -334,7 +337,7 @@ max-width: 50%;
 .about .about-container .personal-info .info-item p{
     font-weight: 600;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 13px;
     color: var(--bg-black-900);
     border-bottom: 1px solid var(--bg-black-50);
 }
@@ -344,9 +347,251 @@ max-width: 50%;
     margin-left: 4px;
     display: inline-block;
 }
+.about .about-container .personal-info .buttons{
+    margin-top: -5rem;
+}
+.about .about-container .personal-info .buttons .btn{
+    margin-right: 15px;
+}
 .about .about-container .skills{
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: -20rem;
     
 }
+.about .about-container .skills .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+
+}
+.about .about-container .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.about .about-container .skills .skill-item .progress{
+    background: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-container .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+.about .about-container .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.about .about-container .education,
+.about .about-container .experience{
+flex: 0 0 50%;
+max-width: 50%;
+margin-top: 30px;
+
+}
+.about .about-container h3 .title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--bg-black-900)
+}
+.about .about-container .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+}
+.about .about-container .timeline{
+background-color: var(--bg-black-100);
+padding: 30px 15px;
+border: 1px solid var(--bg-black-50);
+border-radius: 10px;
+width: 100%;
+position: relative;
+}
+.about .about-container .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.about .about-container .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+.about .about-container .timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+.about .about-container .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.about .about-container .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-900);
+}
+.about .about-container .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+.about .about-container .timeline .title-timeline{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--bg-black-900);
+}
+.about .about-container .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--bg-black-700);
+}
+.service-item{
+    margin-bottom: 30px;
+    flex: 33.33%;
+    max-width: 33.3%;
+}
+.service-item .service-item-inner{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transform: all 0.3s ease;
+}
+.service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.service-item .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+  
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.service-item .service-item-inner .icon .fa{
+font-size: 40px;
+line-height: 60px;
+color: var(--skin-color);
+transition: all 0.3s ease;
+}
+.service-item .service-item-inner:hover .icon{
+    background: var(--skin-color);
+}
+.service-item .service-item-inner:hover .icon .fa{
+    font-size: 25px;
+    color: #ffff;
+}
+.service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--bg-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--bg-black-700);
+    line-height: 25px;
+}
+.contact-title{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact-sub-title{
+    color: var(--bg-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact-info-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-info-item .icon{
+display: inline-block;
+
+}
+.contact-info-item .icon .fa{
+    font-size: 25px;
+    color: var(--skin-color);
+
+}
+.contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bg-black-900);
+    text-transform: capitalize;
+    margin: 5px 0 5px;
+}
+.contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--bg-black-700);
+    font-weight: 400;
+}
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6{
+flex: 0 0 50%;
+max-width: 50%;
+
+}
+.contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+  
+    }
+    .contact .contact-form .form-item{
+        margin-bottom: 0;
+    }
+    .contact .contact-form .form-item .form-control{
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+        background-color: var(--bg-black-100);
+        border: 1px solid var(--bg-black-50);
+        padding: 10px 25px;
+        font-size: 16px;
+        color: var(--bg-black-700);
+        transition: all 0.3s ease;
+    }
+    .contact .contact-form .form-item .form-control:focus{
+        box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    }
+    .contact .contact-form .form-item textarea.form-control{
+        height: 140px;
+    }
+   
