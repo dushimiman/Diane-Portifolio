@@ -38,22 +38,10 @@ ul{
     min-height: 100vh;
     display: block;
 
-  padding: 0 30px;
+  /* padding: 0 30px; */
 
   opacity: 1;
-  /* position: fixed;
-  left: 270px;
-  top: 0;
-right: 0;
-bottom: 0;
-z-index: 0; */
-
-   
-  
 }
-/* .hidden{
-    display: none !important;
-} */
 .main-container{
     padding-left: 130px;
     
@@ -694,4 +682,11 @@ max-width: 50%;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+  }
+  #text{
+display: block;
+color: #000;
+font-weight: 300;
+font-style: italic;
+padding: 5px;
   }

@@ -324,25 +324,33 @@
     <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
     <h3>Contact Form</h3>
 
-    <div class="container">
-      <form action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+    <div class="container" id="error">
+      <form  id= "form" action="#" onsubmit="return myFun()">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." value="">
+        <span id="Message"></span>
     
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." value="">
     
+        <span id="Message"></span>
+
         <label for="country">Country</label>
         <select id="country" name="country">
           <option value="rwanda">Rwanda</option>
           <option value="burundi">Burundi</option>
           <option value="uganda">Uganda</option>
         </select>
+        <input type="text" name="" id="email" placeholder="enter Email Address" onkeydown="validation()" >
+        <span id="text"></span>
     
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        <a href="" class="btn "> Submit</a>
-        <!-- <input type="submit" value="Submit"> -->
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" value=""></textarea>
+        <span id="Message"></span>
+    
+        <!-- <a href="" class="btn "> Submit</a> -->
+        <input type="submit" value="Submit">
+       
       </form>
     </div>
 </div>
