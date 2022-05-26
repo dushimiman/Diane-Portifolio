@@ -625,13 +625,13 @@ max-width: 50%;
     .main-container{
         padding-left: 0px;
     }
-    .aside .logo{
+    /* .aside .logo{
         position: absolute;
         top: 50px;
         font-size: 30px;
         text-transform: capitalize;
         padding-left: 500px;
-    }
+    } */
   
           .aside{
            left: -270px;
