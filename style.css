@@ -37,19 +37,16 @@ ul{
     background: var(--bg-black-50);
     min-height: 100vh;
     display: block;
-
-  /* padding: 0 30px; */
-
-  opacity: 1;
+    opacity: 1;
 }
 .main-container{
     padding-left: 130px;
-    
 }
 .section .container{
     padding-top: 60px;
     padding-bottom: 70px;
     padding-left: 40px;
+  
 }
 .section-tittle{
     flex: 0 0 100;
@@ -174,28 +171,25 @@ left: 0;
     right: 0;
 
 }
-.aside .nav-toggler{
-    /* height: 40px; */
-    /* width: 45px; */
+/* .aside .nav-toggler{
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
     left: 300px;
     top: 20px;
     border-radius: 5px;
-    /* background: var(--bg-black-100); */
     background-color: red;
     display:none;
     align-items: center;
     justify-content: center;
-}
-.aside .nav-toggler span{
+} */
+/* .aside .nav-toggler span{
     height: 2px;
     width: 18px;
     background: var(--skin-color);
     display: inline-block;
-}
-.aside .nav-toggler span::before{
+} */
+/* .aside .nav-toggler span::before{
     content: '';
     height: 2px;
     width: 18px;
@@ -203,8 +197,8 @@ left: 0;
     position: absolute;
     top: -6px;
     left:0;
-}
-.aside .nav-toggler span::after{
+} */
+/* .aside .nav-toggler span::after{
     content: '';
     height: 2px;
     width: 18px;
@@ -212,10 +206,11 @@ left: 0;
     position: absolute;
     top: 6px;
     left:0;
-}
+} */
 .aside .nav{
     margin-top: 50px;
 }
+
 .aside .nav li{
     margin-bottom: 20px;
     /* background: red; */
@@ -239,6 +234,9 @@ left: 0;
     min-height: 100vh;
     display: flex;
     color: var(--bg-black-900);
+}
+.container #icon{
+   display: none;
 }
 .home-info{
     flex: 0 0 60%;
@@ -597,11 +595,11 @@ max-width: 50%;
         height: 140px;
     }
    @media (max-width:1199px){
-       .aside{
+       /* .aside{
            left: -270px;
          
-           /* background-color: red; */
-       }
+           
+       } */
        .aside .open{
            left: 0;
        }
@@ -609,10 +607,6 @@ max-width: 50%;
          display: flex;
          /* left: 30px; */
          /* color: black; */
-     }
-     .home-section {
-       /* left: -50px !important; */
-      
      }
        .about .about-container .personal-info .info-item p span{
            display: block;
@@ -622,10 +616,34 @@ max-width: 50%;
 
    }
    @media (max-width:991px){
+      
+    .container #icon{
+        color: red;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .main-container{
+        padding-left: 0px;
+    }
+    .aside .logo{
+        position: absolute;
+        top: 50px;
+        font-size: 30px;
+        text-transform: capitalize;
+        padding-left: 500px;
+    }
+  
+          .aside{
+           left: -270px;
+         
+           
+       } 
+       .section .container{
+           padding-left: 0px;
+       }
         .contact-info-item{
         flex:  0 0 50%;
         max-width: 50%;
-        /* margin-top: 10rem;  */
        }
        .service-item{
         flex:  0 0 50%;
