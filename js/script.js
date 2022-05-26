@@ -7,46 +7,7 @@ var typed = new Typed(".typing", {
 
 })
 
-//aside
 
-const nav = document.querySelector("nav"),
-    navList = nav.querySelector("li"),
-    totalNavList = navList.length;
-for (i = 0; i < totalNavList; i++) {
-    console.log(navList[i])
-    const a = navList[i].querySelector("a");
-    a.addEventListener("click", function () {
-        for (let j = 0; j < totalNavList; j++) {
-            navList[j].querySelector("a").classList.remove("active");
-        }
-        this.classList.add("active")
-    })
-}
-const navTogglerBtn = document.querySelector(".nav-toggler"),
-    aside = document.querySelector(".aside");
-navTogglerBtn.addEventListener("click", () => {
-    asideSectionTogglerBtn();
-})
-function asideSectionTogglerBtn() {
-    aside.classList.toggle("open");
-}
-// validation
-
-// function validation(){
-//    var fname = document.getElementById("fname").value;
-//    var lname = document.getElementById("lname").value;
-//    var country = document.getElementById("country").value;
-//    var message = document.getElementById("message").value;
-//   var text;
-//   error_message.style.padding = "10px";
-
-//   if(fname.length <5){
-//       text = "Please Enter Valid name";
-//       error_message.innerHTML = text;
-//       return false
-//   }
-//   return false;
-// }
 function validation() {
     var form = document.getElementById("form");
     var email = document.getElementById("email").value;
@@ -76,29 +37,71 @@ function validation() {
     }
 
 }
+function validateFirstName(){
+  var fname = document.getElementById("fname").value;
 
-function myFun() {
-    var correct_way = /^[A-Za-z]+$/;
-    var a = document.getElementById("fname").value;
-
-    if (a == "") {
-        document.getElementById("Message").innerHTML = "** Please Enter your First Name";
-        return false;
-
-    }
-  
-    if (a.length < 3) {
+    if (fname.length < 3) {
         document.getElementById("Message").innerHTML = "** First name must be 3 character";
         return false;
     }
-    if (a.length > 20) {
-        document.getElementById("Message").innerHTML = "** First name must be less than 20 character";
+    if (fname.length > 20) {
+            document.getElementById("Message").innerHTML = "** First name must be less than 20 character";
+            return false;
+        }
+}
+function validateLastName(){
+    var lname = document.getElementById("lname").value;
+    if (lname.length < 3) {
+        document.getElementById("message").innerHTML = "** Last name must be 3 character";
         return false;
     }
-    if(a.match(correct_way))
-    true;
-    else{
-        document.getElementById("Message").innerHTML = "** Only alphabets are allowed here ";
-        return false;  
+}
+function validateTextField(){
+    var subject = document.getElementById("subject").value;
+
+    if (subject.length < 3) {
+        document.getElementById("Messages").innerHTML = "**Subject is too short";
+        return false;
     }
 }
+
+
+function myFun() {
+    validateFirstName();
+    validateLastName();
+    validateTextField();
+ 
+    // var correct_way = /^[A-Za-z]+$/;
+    // var a = document.getElementById("fname").value;
+    // var b =document.getElementById("lname").value
+    
+
+    // if (a == "") {
+    //     document.getElementById("Message").innerHTML = "** Please Enter your First Name";
+      
+
+    // }
+    
+    // if (b == "") {
+    //     document.getElementById("Message").innerHTML = "** Please Enter your Last Name";
+    //     return false;
+
+    // }
+  
+    // if (a.length < 3) {
+    //     document.getElementById("Message").innerHTML = "** First name must be 3 character";
+    //     return false;
+    // }
+    // if (a.length > 20) {
+    //     document.getElementById("Message").innerHTML = "** First name must be less than 20 character";
+    //     return false;
+    // }
+    // if(a.match(correct_way))
+    // true;
+    // else{
+    //     document.getElementById("Message").innerHTML = "** Only alphabets are allowed here ";
+    //     return false;  
+    // }
+}
+
+document.querySelector(".submit-button").addEventListener("click",myFun())

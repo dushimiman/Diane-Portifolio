@@ -14,6 +14,7 @@
  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
  <link rel="stylesheet" href="css/style-switched.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body >
 
@@ -22,9 +23,10 @@
       <div class="logo">
           <a href="#"> <span>D</span>IANE</a>
       </div>
-      <div class="nav-toggler">
+   
+      <!-- <div class="nav-toggler">
           <span></span>
-      </div>
+      </div> -->
       <ul class="nav">
           <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
           <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
@@ -32,12 +34,14 @@
           <!-- <li><a href=""><i class="fa fa-briefcase"></i>Portifolio</a></li> -->
           <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
       </ul>
+    
       </div>
       <div class="main-container">
           <section class="home-section " id="home">
           <div class="container">
               <div class="row">
                   <div class="home-info padd-15">
+                    
                       <h3 class="hello">Hello, My name is <span class="name">Diane Dushimimana</span></h3>
                       <h3 class="my-professin">I'm a <span class="typing">Web Designer</span></h3>
                       <p>Lead UI/UX website designer for a fast-paced design firm. Created an average of four minor websites or one major website per month.
@@ -49,6 +53,9 @@
                       <img src="images/hero.jpg" alt="">
                   </div>
               </div>
+              <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
           </div>
           </section>
           <section class="about section" id="about">
@@ -325,16 +332,16 @@
     <h3>Contact Form</h3>
 
     <div class="container" id="error">
-      <form  id= "form" action="#" onsubmit="return myFun()">
+      <form  id= "form"  >
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name.." value="">
         <span id="Message"></span>
-    
+    <br>
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name.." value="">
     
-        <span id="Message"></span>
-
+        <span id="message"></span>
+        <br>
         <label for="country">Country</label>
         <select id="country" name="country">
           <option value="rwanda">Rwanda</option>
@@ -346,10 +353,10 @@
     
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" value=""></textarea>
-        <span id="Message"></span>
-    
+        <span id="Messages"></span>
+        <br>
         <!-- <a href="" class="btn "> Submit</a> -->
-        <input type="submit" value="Submit">
+        <input type="button" value="Submit" class="submit-button">
        
       </form>
     </div>
