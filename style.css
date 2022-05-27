@@ -575,37 +575,7 @@ max-width: 50%;
 
    }
    @media (max-width:991px){
-      
-    #check{
-        display: none;
-    }
-    label #btn1, label #cancel{
-        position: absolute;
-        cursor: pointer;
-    }
-    label #btn1{
-        left: 40px;
-        top: 25px;
-        font-size: 35px;
-        transition: all .5s;
-    }
-    label #cancel{
-        z-index: 1111;
-        left: -195px;
-        top: 17px;
-        font-size: 30px;
-    }
-    #check:checked ~ .aside{
-        left: 150px;
-    }
-    #check:checked ~ label #btn1{
-        left: 250px;
-        opacity: 0;
-        pointer-events: none;
-    }
-    #check:checked ~ label #cancel{
-    left: 195px;
-    }
+
 .aside{
     left: -270px;
     z-index: 1111;
