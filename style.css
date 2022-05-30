@@ -628,7 +628,7 @@ max-width: 50%;
    @media (max-width:991px){
 
 .aside{
-    left: -300px;
+    left: -270px;
    position: fixed;
    top: 0;
    height: 100vh;
