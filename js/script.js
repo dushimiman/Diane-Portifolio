@@ -106,10 +106,10 @@ function myFun() {
 
 document.querySelector(".submit-button").addEventListener("click",myFun())
 
-// const menu_toggle = document.querySelector('.menu-toggle');
-// const aside = document.querySelector('.aside');
-// menu_toggle.addEventListener('click',() =>{
-//     menu_toggle.classList.toggle('nav');
-//     aside.toggle.classList('nav')
+const menu_toggle = document.querySelector('.menu-toggle');
+const aside = document.querySelector('.aside');
+menu_toggle.addEventListener('click',() =>{
+    menu_toggle.classList.toggle('.nav');
+    aside.toggle.classList('.nav')
     
-// })
+})
