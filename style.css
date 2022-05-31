@@ -718,3 +718,10 @@ font-weight: 300;
 font-style: italic;
 padding: 5px;
   }
+  .hidden{
+display: none;
+  }
+  .open{
+      display: block;
+  }
+
